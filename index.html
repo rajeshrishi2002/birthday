@@ -1,0 +1,40 @@
+.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD🥰</title>
+    <link rel="icon" href="cute-cartoon-birthday-cake-slice-icon-free-png.webp">
+    <link rel="stylesheet" href="birthday.css">
+</head>
+<body background="bg.jpg">
+   
+    <div class="container">
+        <div class="envelope-wrapper" onclick="audio.play();">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <center><strong><i><span style="color: rgb(157, 39, 212);"> Happiest Birthday AISHU </span></i></strong></center>
+                        <p>
+                            It’s your special day❤️, and I hope it’s as incredible as a BTS💜 concert.<br>
+                            Just like BTS’s music, I hope your birthday is uplifting & unforgettable! <br>
+                            <center><strong><i><span style="color: rgb(107, 5, 135); background-color: rgb(226, 125, 242)";>Once again Happy Birthday🫰🏻</span></i></strong></center>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        const audio=new Audio();
+        audio.src="Dynamite-BTS.mp3";
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
